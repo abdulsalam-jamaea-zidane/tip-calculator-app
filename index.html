@@ -13,6 +13,104 @@
   <link rel="stylesheet" href="styles/index.css" />
 </head>
 <body>
+  <!-- * Header Begins *
+    Header Contain The Logo Of The Website
+
+    TODO: Center The Logo Using CSS
+   -->
+  <header class="header">
+    <img src="images/logo.svg" alt="logo icon" class="header__logo" />
+  </header>
+  <!-- * Header Ceases 
+
+   -->
+  <main>
+    <form>
+      <section>
+        <!-- * Bill Input Begin *
+           Input To Enter The Number Of Bill
+           TODO: Make The Logo Of Dollar On The Left
+           TODO: Make The Entered Value Direction To The Right
+         -->
+        <label for="bill">bill</label>
   
+        <div class="custom-field">
+          <input type="number" id="bill" class="custom-field__input" />
+          <img src="images/icon-dollar.svg" alt="dollar icon" class="custom-field__icon" />
+        </div>
+        <!-- * Bill Input Ceases
+
+         -->
+
+         <!-- * Select Tip Input Begin *
+           Muilt-Select Allow To Choose Tip Percentage
+           TODO: Center Tip Value
+           TODO: Make The Design Of The Custom Button Different
+         -->
+        <label>select tip %</label>
+  
+        <div class="btns-group">
+          <button class="btns-group__select">5%</button>
+          <button class="btns-group__select">10%</button>
+          <button class="btns-group__select">15%</button>
+          <button class="btns-group__select">20%</button>
+          <button class="btns-group__select">25%</button>
+          <button class="btns-group__select">custom</button>
+        </div>
+        <!-- * Select Tip Input Ceases
+
+         -->
+
+         <!-- * People Number Input Begin *
+           Input To Enter The Number Of People
+           TODO: Make The Logo Of Person On The Left
+           TODO: Make The Entered Value Direction To The Right
+         -->
+        <label for="people">number of people</label>
+  
+        <div class="custom-field">
+          <input type="number" id="people" class="custom-field__input" />
+          <img src="images/icon-person.svg" alt="person icon" class="custom-field__icon" />
+        </div>
+        <!-- * People Number Input Ceases * 
+
+         -->
+      </section>
+      
+      <!-- * Panel Begins * 
+          Panel To Show Tip Amount & Total
+       -->
+      <section class="panel">
+
+        <!-- * Tip Amount Begins *
+          Show Tip Data
+          TODO: Make The Tip Direction To The Right
+         -->
+        <div class="panel-item">
+          <h2 class="panel-item__title">tip amount</h2>
+          <p class="panel-item__to">/ person</p>
+          <span class="panel-item__result">$0.00</span>
+        </div>
+        <!-- * Tip Amount Ceases 
+
+         -->
+
+         <!-- * Total Price Begins * 
+            Show The Final Result
+            TODO: Make The Tip Direction To The Right
+          -->
+        <div class="panel-item">
+          <h2 class="panel-item__title">total</h2>
+          <p class="panel-item__to">/ person</p>
+          <span class="panel-item__result">$0.00</span>
+        </div>
+        <!-- * Total Price Ceases 
+
+         -->
+        <button type="reset" class="panel__reset">reset</button>
+      </section>
+    </form>
+  </main>
+
 </body>
 </html>
