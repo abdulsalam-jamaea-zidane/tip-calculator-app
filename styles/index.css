@@ -1,3 +1,32 @@
+/*
+
+  This CSS files are done using Block, Element, Modifier methodology (BEM Approach)
+
+*/
+
 /* Import CSS Files */
 @import "form.css";
 @import "active-states.css";
+/* Import Space Mono Font */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+/* Global Style */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --dark-cyan: hsl(183, 100%, 15%);
+  --primary-dark-grayish-cyan: hsl(186, 14%, 43%);
+  --secondary-dark-grayish-cyan: hsl(184, 14%, 56%);
+  --primary-light-grayish-cyan: hsl(185, 41%, 84%);
+  --secondary-light-grayish-cyan: hsl(189, 41%, 97%);
+  --primary-font: 'Space Mono', monospace;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--primary-font);
+  color: var(--primary-dark-grayish-cyan);
+}
